@@ -153,7 +153,6 @@ section.gray{background:var(--gray);}
   .stat-row{grid-template-columns:1fr 1fr;}
 }
 
-
 /* ── MOBILE STICKY CTA BAR ───────────────────────────────────── */
 .mobile-cta-bar{
   display:none;
@@ -173,15 +172,28 @@ section.gray{background:var(--gray);}
 
 /* ── ADDITIONAL MOBILE FIXES ─────────────────────────────────── */
 @media(max-width:768px){
+  /* Nav */
   nav{padding:0.875rem 1.25rem;}
   .nav-contact{display:none;}
+
+  /* Decorative oversized text */
   .cta-mono{display:none;}
+
+  /* Pricing stat compare — stay side by side but shrink numbers */
   .stat-compare{grid-template-columns:1fr 1fr;}
   .compare-num{font-size:36px;}
   .stat-compare-cell{padding:1.25rem 1rem;}
+
+  /* Hero stat numbers */
   .stat-num{font-size:32px;}
+
+  /* CTA section padding */
   .cta-section{padding:4rem 1.5rem;}
+
+  /* sc-strip padding */
   .sc-strip-cell{padding:1.5rem;}
+
+  /* Sticky bar spacing */
   body{padding-bottom:64px;}
   .mobile-cta-bar{display:block;}
 }
