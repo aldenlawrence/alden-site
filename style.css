@@ -152,3 +152,47 @@ section.gray{background:var(--gray);}
   .cta-contacts{gap:1.5rem;}
   .stat-row{grid-template-columns:1fr 1fr;}
 }
+
+
+/* ── MOBILE STICKY CTA BAR ───────────────────────────────────── */
+.mobile-cta-bar{
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;z-index:200;
+  background:var(--black);
+  border-top:0.5px solid rgba(255,255,255,0.12);
+  padding:12px 20px;
+}
+.mobile-cta-bar a{
+  display:block;width:100%;
+  background:var(--white);color:var(--black);
+  text-align:center;padding:14px;
+  font-size:13px;font-weight:600;
+  letter-spacing:0.06em;text-decoration:none;
+  text-transform:uppercase;
+}
+
+/* ── ADDITIONAL MOBILE FIXES ─────────────────────────────────── */
+@media(max-width:768px){
+  nav{padding:0.875rem 1.25rem;}
+  .nav-contact{display:none;}
+  .cta-mono{display:none;}
+  .stat-compare{grid-template-columns:1fr 1fr;}
+  .compare-num{font-size:36px;}
+  .stat-compare-cell{padding:1.25rem 1rem;}
+  .stat-num{font-size:32px;}
+  .cta-section{padding:4rem 1.5rem;}
+  .sc-strip-cell{padding:1.5rem;}
+  body{padding-bottom:64px;}
+  .mobile-cta-bar{display:block;}
+}
+
+/* ── SMALL PHONE BREAKPOINT (480px) ──────────────────────────── */
+@media(max-width:480px){
+  .hero-headline{font-size:34px;}
+  .section-headline{font-size:28px;}
+  .stat-compare{grid-template-columns:1fr;}
+  .compare-num{font-size:48px;}
+  .ann-bar{grid-template-columns:1fr;}
+  .sc-strip-num{font-size:36px;}
+  .cta-headline{font-size:30px;}
+}
