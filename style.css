@@ -151,6 +151,24 @@ section.gray{background:var(--gray);}
   .cta-headline{font-size:36px;}
   .cta-contacts{gap:1.5rem;}
   .stat-row{grid-template-columns:1fr 1fr;}
+  /* Nav */
+  nav{padding:0.875rem 1.25rem;}
+  .nav-contact{display:none;}
+  /* Decorative oversized text */
+  .cta-mono{display:none;}
+  /* Pricing stat compare */
+  .stat-compare{grid-template-columns:1fr 1fr;}
+  .compare-num{font-size:36px;}
+  .stat-compare-cell{padding:1.25rem 1rem;}
+  /* Hero stat numbers */
+  .stat-num{font-size:32px;}
+  /* CTA section padding */
+  .cta-section{padding:4rem 1.5rem;}
+  /* About photo */
+  .about-photo{width:100%;max-width:280px;margin:0 auto;display:block;}
+  /* Sticky bar spacing */
+  body{padding-bottom:64px;}
+  .mobile-cta-bar{display:block;}
 }
 
 /* ── MOBILE STICKY CTA BAR ───────────────────────────────────── */
@@ -170,33 +188,7 @@ section.gray{background:var(--gray);}
   text-transform:uppercase;
 }
 
-/* ── ADDITIONAL MOBILE FIXES ─────────────────────────────────── */
-@media(max-width:768px){
-  /* Nav */
-  nav{padding:0.875rem 1.25rem;}
-  .nav-contact{display:none;}
-
-  /* Decorative oversized text */
-  .cta-mono{display:none;}
-
-  /* Pricing stat compare — stay side by side but shrink numbers */
-  .stat-compare{grid-template-columns:1fr 1fr;}
-  .compare-num{font-size:36px;}
-  .stat-compare-cell{padding:1.25rem 1rem;}
-
-  /* Hero stat numbers */
-  .stat-num{font-size:32px;}
-
-  /* CTA section padding */
-  .cta-section{padding:4rem 1.5rem;}
-
-  /* sc-strip padding */
-  .sc-strip-cell{padding:1.5rem;}
-
-  /* Sticky bar spacing */
-  body{padding-bottom:64px;}
-  .mobile-cta-bar{display:block;}
-}
+/* ── ADDITIONAL MOBILE FIXES (merged into main 768px block above) ── */
 
 /* ── SMALL PHONE BREAKPOINT (480px) ──────────────────────────── */
 @media(max-width:480px){
